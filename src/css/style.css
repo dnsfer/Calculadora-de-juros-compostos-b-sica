@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root { 
+    --linear-gradient: linear-gradient(90deg, #03303a, #025940, #1d1833);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--linear-gradient);
+    color: #f5f5f5;
+}
+
+#calculator{
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(26, 26, 26, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculator h2{
+    font-size: 1.975rem;
+    position: relative;
+}
+
+#calculator h2::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 5px;
+}
+
+#input_box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input_field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input_field label{
+    font-size: .9rem;
+    color: #D8C8D6;
+    font-weight: 500;
+}
+
+.input_field input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #025940;
+    border-radius: 5px;
+    color: #FFFF;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+.input_field input:focus{
+    outline: none;
+}
+
+.input_field input[type="number"]::-webkit-inner-spin-button,
+.input_field input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#result{
+    text-align: center;
+    font-size: 1.835rem;
+}
+
+#total{
+    font-size: 2.50;
+}
+
+#calculate{
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.127rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
